@@ -129,14 +129,18 @@ public class MemberController {
 
 	}
 
+//	public void delete() {
+//		for (int i = 0; i < m.length; i++) {
+//			for (int j = 0; j < m.length - 1; j++) {
+//				m[j] = m[j + 1];
+//
+//				m[m.length - 1] = null;
+//			}
+//		}
+//	}
 	public void delete() {
-		for (int i = 0; i < m.length; i++) {
-			for (int j = 0; j < m.length - 1; j++) {
-				m[j] = m[j + 1];
-
-				m[m.length - 1] = null;
-			}
-		}
+		this.m = new Member[this.SIZE];
+		
 	}
 
 	public Member[] printAll() {
